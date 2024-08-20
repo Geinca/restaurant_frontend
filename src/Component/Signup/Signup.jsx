@@ -32,6 +32,7 @@ const Signup = () => {
           <select name="" id="">
             <option value="">Customer</option>
             <option value="">Admin</option>
+            <option value="">Employee</option>
           </select>
           <button onClick={formHandel}>Register</button>
           <button id={style.btn}><Link to={"/signin"} style={{color:"rgb(54, 83, 55)",textDecoration:"none",fontSize:"23px"}}>Signin</Link></button>
