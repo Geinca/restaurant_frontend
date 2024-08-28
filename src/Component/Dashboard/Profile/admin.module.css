@@ -1,0 +1,105 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.Adminprofile{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(45deg,rgb(102, 101, 101),rgb(172, 172, 172),rgb(133, 131, 131));
+}
+.Adminprofile>.part1{
+    width: 100%;
+    height: 30%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.Adminprofile>.part1>div{
+    height: 50%;
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.2);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid rgb(64, 64, 64);
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgb(80, 79, 79);
+}
+.Adminprofile>.part1>div>img{
+    height: 50%;
+    width: 70px;
+    border: 2px solid rgb(94, 94, 94);
+    border-radius: 15px;
+    margin-right: 20px;
+}
+.Adminprofile>.part1>div>h1{
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(0, 63, 63);
+}
+.Adminprofile>.part2{
+    width: 80%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 3px solid rgb(52, 52, 52);
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgb(80, 79, 79);
+}
+.Adminprofile>.part2>.section1{
+    width: 80%;
+    height: 15%;
+    display:flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -30px;
+}
+.Adminprofile>.part2>.section1>h2{
+    font-size: 35px;
+    color: rgb(4, 65, 65);
+}
+.Adminprofile>.part2>.section1>h4{
+    margin-top: 10px;
+    font-size: 20px;
+    color: rgb(91, 77, 0);
+}
+.Adminprofile>.part2>.section2{
+    width: 50%;
+    height: 15%;
+    display:flex ;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.Adminprofile>.part2>.section2>h2{
+    font-size: 24px;
+    color: rgb(4, 65, 65);
+
+}
+.Adminprofile>.part2>.section3{
+    width: 40%;
+    height: 15%;
+    display:flex ;
+    justify-content: space-evenly;
+    align-items: center;
+    /* color: rgb(1, 108, 170); */
+}
+.Adminprofile>.part2>.section4{
+    margin-top: 20px;
+    width: 80%;
+    height: 15%;
+    display:flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 19px;
+    color: rgb(2, 57, 57);
+}

@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.Dashboard{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    background-color: #eceaea;
+
+}
+.Dashboard>.part1{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(25, 25, 25, 0.896);
+    border-right: 3px solid black;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position:fixed;
+}
+.Dashboard>.part1>.img{
+    width: 90%;
+    height: 15%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.Dashboard>.part1>.img>img{
+    height: 50px;
+    width: 50px;
+    border: 4px solid gold;
+}
+.Dashboard>.part1>.img>h1{
+    color: rgb(7, 209, 209);
+    font-size: 40px;
+    font-family:'Courier New', Courier, monospace;
+    font-weight:bolder;
+}
+.Dashboard>.part1>.img>h1:hover{
+    cursor: default;
+}
+.Dashboard>.part1>.list{
+    height: 90%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: chocolate;
+}
+.Dashboard>.part1>.list>h4{
+    height: 20px;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+}
+.Dashboard>.part1>.setting{
+    height: 10%;
+    width: 70%;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    color: white;
+}
+.Dashboard>.part1>.setting>h3:hover{
+    cursor: pointer;
+}
+.Dashboard>.part2{
+    height: 100%;
+    width: 80%;
+    background-color: #f0f0f0;
+    margin-left: 20%;
+}
+.Dashboard>.part2>.section{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid grey;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 0px 0px 10px grey;
+    
+}
+.Dashboard>.part2>.section>.section1{
+    height: 100%;
+    width: 15%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.Dashboard>.part2>.table{
+    height: 70%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 80px;
+    background-color: #eceaea;
+
+}
+.Dashboard>.part2>.table>table{
+    height: 100%;
+    width: 90%;
+    /* background-color: rgba(199, 195, 195, 0.703); */
+    
+}
+.Dashboard>.part2>.table>table>tr{
+    height: 10%;
+    width: 100%;
+    margin-top: 20px;
+}
+.Dashboard>.part2>.table>table>.row1{
+    font-size: 20px;
+}
+.Dashboard>.part2>.table>table>.row2{
+    font-size: 20px;
+}
+.Dashboard>.part2>.table>table>.row2>td>button{
+    height: 40px;
+    width: 90px;
+    font-size: 15px;
+    margin: 10px;
+}
