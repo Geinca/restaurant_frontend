@@ -18,7 +18,7 @@ const Home = () => {
         setCount(count + 1);
     };
 
-    const handleDecrement = () => {
+    const handleDecreament= () => {
         if (count == 0) {
             setCount(count)
         }
@@ -30,7 +30,7 @@ const Home = () => {
         setCount1(count1 + 1);
     };
 
-    const handleDecrement1 = () => {
+    const handleDecreament1 = () => {
         if (count1 == 0) {
             setCount1(count1)
         }
@@ -42,7 +42,7 @@ const Home = () => {
         setCount2(count2 + 1);
     };
 
-    const handleDecrement2 = () => {
+    const handleDecreament2 = () => {
         if (count2 == 0) {
             setCount2(count2)
         }
@@ -54,7 +54,7 @@ const Home = () => {
         setCount3(count3 + 1);
     };
 
-    const handleDecrement3 = () => {
+    const handleDecreament3 = () => {
         if (count3 == 0) {
             setCount3(count3)
         }
@@ -66,7 +66,7 @@ const Home = () => {
         setCount4(count4 + 1);
     };
 
-    const handleDecrement4 = () => {
+    const handleDecreament4 = () => {
         if (count4 == 0) {
             setCount4(count4)
         }
@@ -78,7 +78,7 @@ const Home = () => {
         setCount5(count5 + 1);
     };
 
-    const handleDecrement5 = () => {
+    const handleDecreament5 = () => {
         if (count5 == 0) {
             setCount5(count5)
         }
@@ -109,9 +109,9 @@ const Home = () => {
                             <Grid style={{ display: "flex", height: "35px", justifyContent: "space-around", alignItems: "center" }}>
                                 <h1 style={{ color: "goldenrod", paddingBottom: "-70px", marginTop: "20px" }}>Burger</h1>
                                 <Grid style={{height:"100%",width:"40%",marginLeft:"20px",border:"2px solid gold",backgroundColor:"rgba(0, 0, 0, .3)",marginTop:"20px",display:"flex",alignItems:"center",justifyContent:"space-evenly",borderRadius:"5px"}}>
-                                <button onClick={handleDecrement1} style={{ color: "white", fontWeight: "700", height: "20px", width: "20px",backgroundColor:"rgba(0, 0, 0, .3)",border:"1px solid grey",borderRadius:"3px" }}>-</button>
-                                <span style={{ height: "20px", width: "20px", fontWeight: "700", fontWeight: "700",color:"white" }}>{count2}</span>
-                                <button onClick={handleIncrement1} style={{ color: "white", fontWeight: "700", height: "20px", width: "20px" ,backgroundColor:"rgba(0, 0, 0, .3)",border:"1px solid grey",borderRadius:"3px"}}>+</button>
+                                <button onClick={handleDecreament} style={{ color: "white", fontWeight: "700", height: "20px", width: "20px",backgroundColor:"rgba(0, 0, 0, .3)",border:"1px solid grey",borderRadius:"3px" }}>-</button>
+                                <span style={{ height: "20px", width: "20px", fontWeight: "700", fontWeight: "700",color:"white" }}>{count}</span>
+                                <button onClick={handleIncrement} style={{ color: "white", fontWeight: "700", height: "20px", width: "20px" ,backgroundColor:"rgba(0, 0, 0, .3)",border:"1px solid grey",borderRadius:"3px"}}>+</button>
                                 </Grid>
                             </Grid>
                             <h3 style={{ color: "rgb(206, 200, 200)", marginTop: "30px", }}>Price : 200</h3>
@@ -123,9 +123,9 @@ const Home = () => {
                             <Grid style={{ display: "flex", height: "35px", justifyContent: "space-around", alignItems: "center" }}>
                                 <h1 style={{ color: "goldenrod", paddingBottom: "-70px", marginTop: "20px" }}>Lasagna</h1>
                                 <Grid style={{height:"100%",width:"40%",marginLeft:"20px",border:"2px solid gold",backgroundColor:"rgba(0, 0, 0, .3)",marginTop:"20px",display:"flex",alignItems:"center",justifyContent:"space-evenly",borderRadius:"5px"}}>
-                                <button onClick={handleDecrement2} style={{ color: "white", fontWeight: "700", height: "20px", width: "20px",backgroundColor:"rgba(0, 0, 0, .3)",border:"1px solid grey",borderRadius:"3px" }}>-</button>
-                                <span style={{ height: "20px", width: "20px", fontWeight: "700", fontWeight: "700",color:"white" }}>{count2}</span>
-                                <button onClick={handleIncrement2} style={{ color: "white", fontWeight: "700", height: "20px", width: "20px" ,backgroundColor:"rgba(0, 0, 0, .3)",border:"1px solid grey",borderRadius:"3px"}}>+</button>
+                                <button onClick={handleDecreament1} style={{ color: "white", fontWeight: "700", height: "20px", width: "20px",backgroundColor:"rgba(0, 0, 0, .3)",border:"1px solid grey",borderRadius:"3px" }}>-</button>
+                                <span style={{ height: "20px", width: "20px", fontWeight: "700", fontWeight: "700",color:"white" }}>{count1}</span>
+                                <button onClick={handleIncrement1} style={{ color: "white", fontWeight: "700", height: "20px", width: "20px" ,backgroundColor:"rgba(0, 0, 0, .3)",border:"1px solid grey",borderRadius:"3px"}}>+</button>
                                 </Grid>
                             </Grid>
                             <h3 style={{ color: "rgb(206, 200, 200)", marginTop: "30px", }}>Price : 200</h3>
@@ -137,9 +137,9 @@ const Home = () => {
                             <Grid style={{ display: "flex", height: "35px", justifyContent: "space-around", alignItems: "center" }}>
                                 <h1 style={{ color: "goldenrod", paddingBottom: "-70px", marginTop: "20px" }}>Dosa</h1>
                                 <Grid style={{height:"100%",width:"40%",marginLeft:"20px",border:"2px solid gold",backgroundColor:"rgba(0, 0, 0, .3)",marginTop:"20px",display:"flex",alignItems:"center",justifyContent:"space-evenly",borderRadius:"5px"}}>
-                                <button onClick={handleDecrement3} style={{ color: "white", fontWeight: "700", height: "20px", width: "20px",backgroundColor:"rgba(0, 0, 0, .3)",border:"1px solid grey",borderRadius:"3px" }}>-</button>
+                                <button onClick={handleDecreament2} style={{ color: "white", fontWeight: "700", height: "20px", width: "20px",backgroundColor:"rgba(0, 0, 0, .3)",border:"1px solid grey",borderRadius:"3px" }}>-</button>
                                 <span style={{ height: "20px", width: "20px", fontWeight: "700", fontWeight: "700",color:"white" }}>{count2}</span>
-                                <button onClick={handleIncrement3} style={{ color: "white", fontWeight: "700", height: "20px", width: "20px" ,backgroundColor:"rgba(0, 0, 0, .3)",border:"1px solid grey",borderRadius:"3px"}}>+</button>
+                                <button onClick={handleIncrement2} style={{ color: "white", fontWeight: "700", height: "20px", width: "20px" ,backgroundColor:"rgba(0, 0, 0, .3)",border:"1px solid grey",borderRadius:"3px"}}>+</button>
                                 </Grid>
                             </Grid>
                             <h3 style={{ color: "rgb(206, 200, 200)", marginTop: "30px", }}>Price : 200</h3>
@@ -151,7 +151,80 @@ const Home = () => {
                             <Grid style={{ display: "flex", height: "35px", justifyContent: "space-around", alignItems: "center" }}>
                                 <h1 style={{ color: "goldenrod", paddingBottom: "-70px", marginTop: "20px" }}>Burger</h1>
                                 <Grid style={{height:"100%",width:"40%",marginLeft:"20px",border:"2px solid gold",backgroundColor:"rgba(0, 0, 0, .3)",marginTop:"20px",display:"flex",alignItems:"center",justifyContent:"space-evenly",borderRadius:"5px"}}>
-                                <button onClick={handleDecrement4} style={{ color: "white", fontWeight: "700", height: "20px", width: "20px",backgroundColor:"rgba(0, 0, 0, .3)",border:"1px solid grey",borderRadius:"3px" }}>-</button>
+                                <button onClick={handleDecreament3} style={{ color: "white", fontWeight: "700", height: "20px", width: "20px",backgroundColor:"rgba(0, 0, 0, .3)",border:"1px solid grey",borderRadius:"3px" }}>-</button>
+                                <span style={{ height: "20px", width: "20px", fontWeight: "700", fontWeight: "700",color:"white" }}>{count3}</span>
+                                <button onClick={handleIncrement3} style={{ color: "white", fontWeight: "700", height: "20px", width: "20px" ,backgroundColor:"rgba(0, 0, 0, .3)",border:"1px solid grey",borderRadius:"3px"}}>+</button>
+                                </Grid>
+                            </Grid>
+                            <h3 style={{ color: "rgb(206, 200, 200)", marginTop: "30px", }}>Price : 200</h3>
+                        </Card>
+                    </Grid>
+
+                    <Grid item lg={3} sm={6} textAlign="center" className={style.secson}>
+                        <Card style={{ height: "100%", width: "90%", padding: "10px",border: "3px solid green",boxShadow: "0px 0px 20px black",backgroundColor: "rgba(0, 0, 0, 0.5)" }}>
+                            <img src="https://www.foodiesfeed.com/wp-content/uploads/2023/06/burger-with-melted-cheese.jpg" alt="" width="50%" marginTop="20px" />
+                            <Grid style={{ display: "flex", height: "35px", justifyContent: "space-around", alignItems: "center" }}>
+                                <h1 style={{ color: "goldenrod", paddingBottom: "-70px", marginTop: "20px" }}>Burger</h1>
+                                <Grid style={{height:"100%",width:"40%",marginLeft:"20px",border:"2px solid gold",backgroundColor:"rgba(0, 0, 0, .3)",marginTop:"20px",display:"flex",alignItems:"center",justifyContent:"space-evenly",borderRadius:"5px"}}>
+                                <button onClick={handleDecreament4} style={{ color: "white", fontWeight: "700", height: "20px", width: "20px",backgroundColor:"rgba(0, 0, 0, .3)",border:"1px solid grey",borderRadius:"3px" }}>-</button>
+                                <span style={{ height: "20px", width: "20px", fontWeight: "700", fontWeight: "700",color:"white" }}>{count4}</span>
+                                <button onClick={handleIncrement4} style={{ color: "white", fontWeight: "700", height: "20px", width: "20px" ,backgroundColor:"rgba(0, 0, 0, .3)",border:"1px solid grey",borderRadius:"3px"}}>+</button>
+                                </Grid>
+                            </Grid>
+                            <h3 style={{ color: "rgb(206, 200, 200)", marginTop: "30px", }}>Price : 200</h3>
+                        </Card>
+                    </Grid>
+
+                    <Grid item lg={3} sm={6} textAlign="center" className={style.secson}>
+                        <Card style={{ height: "100%", width: "90%", padding: "10px",border: "3px solid green",boxShadow: "0px 0px 20px black",backgroundColor: "rgba(0, 0, 0, 0.5)" }}>
+                            <img src="https://www.foodiesfeed.com/wp-content/uploads/2023/06/burger-with-melted-cheese.jpg" alt="" width="50%" marginTop="20px" />
+                            <Grid style={{ display: "flex", height: "35px", justifyContent: "space-around", alignItems: "center" }}>
+                                <h1 style={{ color: "goldenrod", paddingBottom: "-70px", marginTop: "20px" }}>Burger</h1>
+                                <Grid style={{height:"100%",width:"40%",marginLeft:"20px",border:"2px solid gold",backgroundColor:"rgba(0, 0, 0, .3)",marginTop:"20px",display:"flex",alignItems:"center",justifyContent:"space-evenly",borderRadius:"5px"}}>
+                                <button onClick={handleDecreament5} style={{ color: "white", fontWeight: "700", height: "20px", width: "20px",backgroundColor:"rgba(0, 0, 0, .3)",border:"1px solid grey",borderRadius:"3px" }}>-</button>
+                                <span style={{ height: "20px", width: "20px", fontWeight: "700", fontWeight: "700",color:"white" }}>{count5}</span>
+                                <button onClick={handleIncrement5} style={{ color: "white", fontWeight: "700", height: "20px", width: "20px" ,backgroundColor:"rgba(0, 0, 0, .3)",border:"1px solid grey",borderRadius:"3px"}}>+</button>
+                                </Grid>
+                            </Grid>
+                            <h3 style={{ color: "rgb(206, 200, 200)", marginTop: "30px", }}>Price : 200</h3>
+                        </Card>
+                    </Grid>
+                    <Grid item lg={3} sm={6} textAlign="center" className={style.secson}>
+                        <Card style={{ height: "100%", width: "90%", padding: "10px",border: "3px solid green",boxShadow: "0px 0px 20px black",backgroundColor: "rgba(0, 0, 0, 0.5)" }}>
+                            <img src="https://www.foodiesfeed.com/wp-content/uploads/2023/06/burger-with-melted-cheese.jpg" alt="" width="50%" marginTop="20px" />
+                            <Grid style={{ display: "flex", height: "35px", justifyContent: "space-around", alignItems: "center" }}>
+                                <h1 style={{ color: "goldenrod", paddingBottom: "-70px", marginTop: "20px" }}>Burger</h1>
+                                <Grid style={{height:"100%",width:"40%",marginLeft:"20px",border:"2px solid gold",backgroundColor:"rgba(0, 0, 0, .3)",marginTop:"20px",display:"flex",alignItems:"center",justifyContent:"space-evenly",borderRadius:"5px"}}>
+                                <button onClick={handleDecreament2} style={{ color: "white", fontWeight: "700", height: "20px", width: "20px",backgroundColor:"rgba(0, 0, 0, .3)",border:"1px solid grey",borderRadius:"3px" }}>-</button>
+                                <span style={{ height: "20px", width: "20px", fontWeight: "700", fontWeight: "700",color:"white" }}>{count2}</span>
+                                <button onClick={handleIncrement1} style={{ color: "white", fontWeight: "700", height: "20px", width: "20px" ,backgroundColor:"rgba(0, 0, 0, .3)",border:"1px solid grey",borderRadius:"3px"}}>+</button>
+                                </Grid>
+                            </Grid>
+                            <h3 style={{ color: "rgb(206, 200, 200)", marginTop: "30px", }}>Price : 200</h3>
+                        </Card>
+                    </Grid>
+                    <Grid item lg={3} sm={6} textAlign="center" className={style.secson}>
+                        <Card style={{ height: "100%", width: "90%", padding: "10px",border: "3px solid green",boxShadow: "0px 0px 20px black",backgroundColor: "rgba(0, 0, 0, 0.5)" }}>
+                            <img src="https://www.foodiesfeed.com/wp-content/uploads/2023/06/burger-with-melted-cheese.jpg" alt="" width="50%" marginTop="20px" />
+                            <Grid style={{ display: "flex", height: "35px", justifyContent: "space-around", alignItems: "center" }}>
+                                <h1 style={{ color: "goldenrod", paddingBottom: "-70px", marginTop: "20px" }}>Burger</h1>
+                                <Grid style={{height:"100%",width:"40%",marginLeft:"20px",border:"2px solid gold",backgroundColor:"rgba(0, 0, 0, .3)",marginTop:"20px",display:"flex",alignItems:"center",justifyContent:"space-evenly",borderRadius:"5px"}}>
+                                <button onClick={handleDecreament2} style={{ color: "white", fontWeight: "700", height: "20px", width: "20px",backgroundColor:"rgba(0, 0, 0, .3)",border:"1px solid grey",borderRadius:"3px" }}>-</button>
+                                <span style={{ height: "20px", width: "20px", fontWeight: "700", fontWeight: "700",color:"white" }}>{count2}</span>
+                                <button onClick={handleIncrement3} style={{ color: "white", fontWeight: "700", height: "20px", width: "20px" ,backgroundColor:"rgba(0, 0, 0, .3)",border:"1px solid grey",borderRadius:"3px"}}>+</button>
+                                </Grid>
+                            </Grid>
+                            <h3 style={{ color: "rgb(206, 200, 200)", marginTop: "30px", }}>Price : 200</h3>
+                        </Card>
+                    </Grid>
+
+                    <Grid item lg={3} sm={6} textAlign="center" className={style.secson}>
+                        <Card style={{ height: "100%", width: "90%", padding: "10px",border: "3px solid green",boxShadow: "0px 0px 20px black",backgroundColor: "rgba(0, 0, 0, 0.5)" }}>
+                            <img src="https://www.foodiesfeed.com/wp-content/uploads/2023/06/burger-with-melted-cheese.jpg" alt="" width="50%" marginTop="20px" />
+                            <Grid style={{ display: "flex", height: "35px", justifyContent: "space-around", alignItems: "center" }}>
+                                <h1 style={{ color: "goldenrod", paddingBottom: "-70px", marginTop: "20px" }}>Burger</h1>
+                                <Grid style={{height:"100%",width:"40%",marginLeft:"20px",border:"2px solid gold",backgroundColor:"rgba(0, 0, 0, .3)",marginTop:"20px",display:"flex",alignItems:"center",justifyContent:"space-evenly",borderRadius:"5px"}}>
+                                <button onClick={handleDecreament2} style={{ color: "white", fontWeight: "700", height: "20px", width: "20px",backgroundColor:"rgba(0, 0, 0, .3)",border:"1px solid grey",borderRadius:"3px" }}>-</button>
                                 <span style={{ height: "20px", width: "20px", fontWeight: "700", fontWeight: "700",color:"white" }}>{count2}</span>
                                 <button onClick={handleIncrement4} style={{ color: "white", fontWeight: "700", height: "20px", width: "20px" ,backgroundColor:"rgba(0, 0, 0, .3)",border:"1px solid grey",borderRadius:"3px"}}>+</button>
                                 </Grid>
@@ -166,50 +239,7 @@ const Home = () => {
                             <Grid style={{ display: "flex", height: "35px", justifyContent: "space-around", alignItems: "center" }}>
                                 <h1 style={{ color: "goldenrod", paddingBottom: "-70px", marginTop: "20px" }}>Burger</h1>
                                 <Grid style={{height:"100%",width:"40%",marginLeft:"20px",border:"2px solid gold",backgroundColor:"rgba(0, 0, 0, .3)",marginTop:"20px",display:"flex",alignItems:"center",justifyContent:"space-evenly",borderRadius:"5px"}}>
-                                <button onClick={handleDecrement} style={{ color: "white", fontWeight: "700", height: "20px", width: "20px",backgroundColor:"rgba(0, 0, 0, .3)",border:"1px solid grey",borderRadius:"3px" }}>-</button>
-                                <span style={{ height: "20px", width: "20px", fontWeight: "700", fontWeight: "700",color:"white" }}>{count2}</span>
-                                <button onClick={handleIncrement} style={{ color: "white", fontWeight: "700", height: "20px", width: "20px" ,backgroundColor:"rgba(0, 0, 0, .3)",border:"1px solid grey",borderRadius:"3px"}}>+</button>
-                                </Grid>
-                            </Grid>
-                            <h3 style={{ color: "rgb(206, 200, 200)", marginTop: "30px", }}>Price : 200</h3>
-                        </Card>
-                    </Grid>
-
-                    <Grid item lg={3} sm={6} textAlign="center" className={style.secson}>
-                        <Card style={{ height: "100%", width: "90%", padding: "10px",border: "3px solid green",boxShadow: "0px 0px 20px black",backgroundColor: "rgba(0, 0, 0, 0.5)" }}>
-                            <img src="https://www.foodiesfeed.com/wp-content/uploads/2023/06/burger-with-melted-cheese.jpg" alt="" width="50%" marginTop="20px" />
-                            <Grid style={{ display: "flex", height: "35px", justifyContent: "space-around", alignItems: "center" }}>
-                                <h1 style={{ color: "goldenrod", paddingBottom: "-70px", marginTop: "20px" }}>Burger</h1>
-                                <Grid style={{height:"100%",width:"40%",marginLeft:"20px",border:"2px solid gold",backgroundColor:"rgba(0, 0, 0, .3)",marginTop:"20px",display:"flex",alignItems:"center",justifyContent:"space-evenly",borderRadius:"5px"}}>
-                                <button onClick={handleDecrement2} style={{ color: "white", fontWeight: "700", height: "20px", width: "20px",backgroundColor:"rgba(0, 0, 0, .3)",border:"1px solid grey",borderRadius:"3px" }}>-</button>
-                                <span style={{ height: "20px", width: "20px", fontWeight: "700", fontWeight: "700",color:"white" }}>{count2}</span>
-                                <button onClick={handleIncrement2} style={{ color: "white", fontWeight: "700", height: "20px", width: "20px" ,backgroundColor:"rgba(0, 0, 0, .3)",border:"1px solid grey",borderRadius:"3px"}}>+</button>
-                                </Grid>
-                            </Grid>
-                            <h3 style={{ color: "rgb(206, 200, 200)", marginTop: "30px", }}>Price : 200</h3>
-                        </Card>
-                    </Grid>
-                    <Grid item lg={3} sm={6} textAlign="center" className={style.secson}>
-                        <Card style={{ height: "100%", width: "90%", padding: "10px",border: "3px solid green",boxShadow: "0px 0px 20px black",backgroundColor: "rgba(0, 0, 0, 0.5)" }}>
-                            <img src="https://www.foodiesfeed.com/wp-content/uploads/2023/06/burger-with-melted-cheese.jpg" alt="" width="50%" marginTop="20px" />
-                            <Grid style={{ display: "flex", height: "35px", justifyContent: "space-around", alignItems: "center" }}>
-                                <h1 style={{ color: "goldenrod", paddingBottom: "-70px", marginTop: "20px" }}>Burger</h1>
-                                <Grid style={{height:"100%",width:"40%",marginLeft:"20px",border:"2px solid gold",backgroundColor:"rgba(0, 0, 0, .3)",marginTop:"20px",display:"flex",alignItems:"center",justifyContent:"space-evenly",borderRadius:"5px"}}>
-                                <button onClick={handleDecrement2} style={{ color: "white", fontWeight: "700", height: "20px", width: "20px",backgroundColor:"rgba(0, 0, 0, .3)",border:"1px solid grey",borderRadius:"3px" }}>-</button>
-                                <span style={{ height: "20px", width: "20px", fontWeight: "700", fontWeight: "700",color:"white" }}>{count2}</span>
-                                <button onClick={handleIncrement2} style={{ color: "white", fontWeight: "700", height: "20px", width: "20px" ,backgroundColor:"rgba(0, 0, 0, .3)",border:"1px solid grey",borderRadius:"3px"}}>+</button>
-                                </Grid>
-                            </Grid>
-                            <h3 style={{ color: "rgb(206, 200, 200)", marginTop: "30px", }}>Price : 200</h3>
-                        </Card>
-                    </Grid>
-                    <Grid item lg={3} sm={6} textAlign="center" className={style.secson}>
-                        <Card style={{ height: "100%", width: "90%", padding: "10px",border: "3px solid green",boxShadow: "0px 0px 20px black",backgroundColor: "rgba(0, 0, 0, 0.5)" }}>
-                            <img src="https://www.foodiesfeed.com/wp-content/uploads/2023/06/burger-with-melted-cheese.jpg" alt="" width="50%" marginTop="20px" />
-                            <Grid style={{ display: "flex", height: "35px", justifyContent: "space-around", alignItems: "center" }}>
-                                <h1 style={{ color: "goldenrod", paddingBottom: "-70px", marginTop: "20px" }}>Burger</h1>
-                                <Grid style={{height:"100%",width:"40%",marginLeft:"20px",border:"2px solid gold",backgroundColor:"rgba(0, 0, 0, .3)",marginTop:"20px",display:"flex",alignItems:"center",justifyContent:"space-evenly",borderRadius:"5px"}}>
-                                <button onClick={handleDecrement2} style={{ color: "white", fontWeight: "700", height: "20px", width: "20px",backgroundColor:"rgba(0, 0, 0, .3)",border:"1px solid grey",borderRadius:"3px" }}>-</button>
+                                <button onClick={handleDecreament2} style={{ color: "white", fontWeight: "700", height: "20px", width: "20px",backgroundColor:"rgba(0, 0, 0, .3)",border:"1px solid grey",borderRadius:"3px" }}>-</button>
                                 <span style={{ height: "20px", width: "20px", fontWeight: "700", fontWeight: "700",color:"white" }}>{count2}</span>
                                 <button onClick={handleIncrement2} style={{ color: "white", fontWeight: "700", height: "20px", width: "20px" ,backgroundColor:"rgba(0, 0, 0, .3)",border:"1px solid grey",borderRadius:"3px"}}>+</button>
                                 </Grid>
@@ -224,7 +254,7 @@ const Home = () => {
                             <Grid style={{ display: "flex", height: "35px", justifyContent: "space-around", alignItems: "center" }}>
                                 <h1 style={{ color: "goldenrod", paddingBottom: "-70px", marginTop: "20px" }}>Burger</h1>
                                 <Grid style={{height:"100%",width:"40%",marginLeft:"20px",border:"2px solid gold",backgroundColor:"rgba(0, 0, 0, .3)",marginTop:"20px",display:"flex",alignItems:"center",justifyContent:"space-evenly",borderRadius:"5px"}}>
-                                <button onClick={handleDecrement2} style={{ color: "white", fontWeight: "700", height: "20px", width: "20px",backgroundColor:"rgba(0, 0, 0, .3)",border:"1px solid grey",borderRadius:"3px" }}>-</button>
+                                <button onClick={handleDecreament2} style={{ color: "white", fontWeight: "700", height: "20px", width: "20px",backgroundColor:"rgba(0, 0, 0, .3)",border:"1px solid grey",borderRadius:"3px" }}>-</button>
                                 <span style={{ height: "20px", width: "20px", fontWeight: "700", fontWeight: "700",color:"white" }}>{count2}</span>
                                 <button onClick={handleIncrement2} style={{ color: "white", fontWeight: "700", height: "20px", width: "20px" ,backgroundColor:"rgba(0, 0, 0, .3)",border:"1px solid grey",borderRadius:"3px"}}>+</button>
                                 </Grid>
@@ -239,7 +269,7 @@ const Home = () => {
                             <Grid style={{ display: "flex", height: "35px", justifyContent: "space-around", alignItems: "center" }}>
                                 <h1 style={{ color: "goldenrod", paddingBottom: "-70px", marginTop: "20px" }}>Burger</h1>
                                 <Grid style={{height:"100%",width:"40%",marginLeft:"20px",border:"2px solid gold",backgroundColor:"rgba(0, 0, 0, .3)",marginTop:"20px",display:"flex",alignItems:"center",justifyContent:"space-evenly",borderRadius:"5px"}}>
-                                <button onClick={handleDecrement2} style={{ color: "white", fontWeight: "700", height: "20px", width: "20px",backgroundColor:"rgba(0, 0, 0, .3)",border:"1px solid grey",borderRadius:"3px" }}>-</button>
+                                <button onClick={handleDecreament2} style={{ color: "white", fontWeight: "700", height: "20px", width: "20px",backgroundColor:"rgba(0, 0, 0, .3)",border:"1px solid grey",borderRadius:"3px" }}>-</button>
                                 <span style={{ height: "20px", width: "20px", fontWeight: "700", fontWeight: "700",color:"white" }}>{count2}</span>
                                 <button onClick={handleIncrement2} style={{ color: "white", fontWeight: "700", height: "20px", width: "20px" ,backgroundColor:"rgba(0, 0, 0, .3)",border:"1px solid grey",borderRadius:"3px"}}>+</button>
                                 </Grid>
@@ -254,37 +284,7 @@ const Home = () => {
                             <Grid style={{ display: "flex", height: "35px", justifyContent: "space-around", alignItems: "center" }}>
                                 <h1 style={{ color: "goldenrod", paddingBottom: "-70px", marginTop: "20px" }}>Burger</h1>
                                 <Grid style={{height:"100%",width:"40%",marginLeft:"20px",border:"2px solid gold",backgroundColor:"rgba(0, 0, 0, .3)",marginTop:"20px",display:"flex",alignItems:"center",justifyContent:"space-evenly",borderRadius:"5px"}}>
-                                <button onClick={handleDecrement2} style={{ color: "white", fontWeight: "700", height: "20px", width: "20px",backgroundColor:"rgba(0, 0, 0, .3)",border:"1px solid grey",borderRadius:"3px" }}>-</button>
-                                <span style={{ height: "20px", width: "20px", fontWeight: "700", fontWeight: "700",color:"white" }}>{count2}</span>
-                                <button onClick={handleIncrement2} style={{ color: "white", fontWeight: "700", height: "20px", width: "20px" ,backgroundColor:"rgba(0, 0, 0, .3)",border:"1px solid grey",borderRadius:"3px"}}>+</button>
-                                </Grid>
-                            </Grid>
-                            <h3 style={{ color: "rgb(206, 200, 200)", marginTop: "30px", }}>Price : 200</h3>
-                        </Card>
-                    </Grid>
-
-                    <Grid item lg={3} sm={6} textAlign="center" className={style.secson}>
-                        <Card style={{ height: "100%", width: "90%", padding: "10px",border: "3px solid green",boxShadow: "0px 0px 20px black",backgroundColor: "rgba(0, 0, 0, 0.5)" }}>
-                            <img src="https://www.foodiesfeed.com/wp-content/uploads/2023/06/burger-with-melted-cheese.jpg" alt="" width="50%" marginTop="20px" />
-                            <Grid style={{ display: "flex", height: "35px", justifyContent: "space-around", alignItems: "center" }}>
-                                <h1 style={{ color: "goldenrod", paddingBottom: "-70px", marginTop: "20px" }}>Burger</h1>
-                                <Grid style={{height:"100%",width:"40%",marginLeft:"20px",border:"2px solid gold",backgroundColor:"rgba(0, 0, 0, .3)",marginTop:"20px",display:"flex",alignItems:"center",justifyContent:"space-evenly",borderRadius:"5px"}}>
-                                <button onClick={handleDecrement2} style={{ color: "white", fontWeight: "700", height: "20px", width: "20px",backgroundColor:"rgba(0, 0, 0, .3)",border:"1px solid grey",borderRadius:"3px" }}>-</button>
-                                <span style={{ height: "20px", width: "20px", fontWeight: "700", fontWeight: "700",color:"white" }}>{count2}</span>
-                                <button onClick={handleIncrement2} style={{ color: "white", fontWeight: "700", height: "20px", width: "20px" ,backgroundColor:"rgba(0, 0, 0, .3)",border:"1px solid grey",borderRadius:"3px"}}>+</button>
-                                </Grid>
-                            </Grid>
-                            <h3 style={{ color: "rgb(206, 200, 200)", marginTop: "30px", }}>Price : 200</h3>
-                        </Card>
-                    </Grid>
-
-                    <Grid item lg={3} sm={6} textAlign="center" className={style.secson}>
-                        <Card style={{ height: "100%", width: "90%", padding: "10px",border: "3px solid green",boxShadow: "0px 0px 20px black",backgroundColor: "rgba(0, 0, 0, 0.5)" }}>
-                            <img src="https://www.foodiesfeed.com/wp-content/uploads/2023/06/burger-with-melted-cheese.jpg" alt="" width="50%" marginTop="20px" />
-                            <Grid style={{ display: "flex", height: "35px", justifyContent: "space-around", alignItems: "center" }}>
-                                <h1 style={{ color: "goldenrod", paddingBottom: "-70px", marginTop: "20px" }}>Burger</h1>
-                                <Grid style={{height:"100%",width:"40%",marginLeft:"20px",border:"2px solid gold",backgroundColor:"rgba(0, 0, 0, .3)",marginTop:"20px",display:"flex",alignItems:"center",justifyContent:"space-evenly",borderRadius:"5px"}}>
-                                <button onClick={handleDecrement2} style={{ color: "white", fontWeight: "700", height: "20px", width: "20px",backgroundColor:"rgba(0, 0, 0, .3)",border:"1px solid grey",borderRadius:"3px" }}>-</button>
+                                <button onClick={handleDecreament2} style={{ color: "white", fontWeight: "700", height: "20px", width: "20px",backgroundColor:"rgba(0, 0, 0, .3)",border:"1px solid grey",borderRadius:"3px" }}>-</button>
                                 <span style={{ height: "20px", width: "20px", fontWeight: "700", fontWeight: "700",color:"white" }}>{count2}</span>
                                 <button onClick={handleIncrement2} style={{ color: "white", fontWeight: "700", height: "20px", width: "20px" ,backgroundColor:"rgba(0, 0, 0, .3)",border:"1px solid grey",borderRadius:"3px"}}>+</button>
                                 </Grid>
@@ -298,7 +298,7 @@ const Home = () => {
                             <Grid style={{ display: "flex", height: "35px", justifyContent: "space-around", alignItems: "center" }}>
                                 <h1 style={{ color: "goldenrod", paddingBottom: "-70px", marginTop: "20px" }}>Burger</h1>
                                 <Grid style={{height:"100%",width:"40%",marginLeft:"20px",border:"2px solid gold",backgroundColor:"rgba(0, 0, 0, .3)",marginTop:"20px",display:"flex",alignItems:"center",justifyContent:"space-evenly",borderRadius:"5px"}}>
-                                <button onClick={handleDecrement2} style={{ color: "white", fontWeight: "700", height: "20px", width: "20px",backgroundColor:"rgba(0, 0, 0, .3)",border:"1px solid grey",borderRadius:"3px" }}>-</button>
+                                <button onClick={handleDecreament2} style={{ color: "white", fontWeight: "700", height: "20px", width: "20px",backgroundColor:"rgba(0, 0, 0, .3)",border:"1px solid grey",borderRadius:"3px" }}>-</button>
                                 <span style={{ height: "20px", width: "20px", fontWeight: "700", fontWeight: "700",color:"white" }}>{count2}</span>
                                 <button onClick={handleIncrement2} style={{ color: "white", fontWeight: "700", height: "20px", width: "20px" ,backgroundColor:"rgba(0, 0, 0, .3)",border:"1px solid grey",borderRadius:"3px"}}>+</button>
                                 </Grid>
@@ -312,7 +312,7 @@ const Home = () => {
                             <Grid style={{ display: "flex", height: "35px", justifyContent: "space-around", alignItems: "center" }}>
                                 <h1 style={{ color: "goldenrod", paddingBottom: "-70px", marginTop: "20px" }}>Burger</h1>
                                 <Grid style={{height:"100%",width:"40%",marginLeft:"20px",border:"2px solid gold",backgroundColor:"rgba(0, 0, 0, .3)",marginTop:"20px",display:"flex",alignItems:"center",justifyContent:"space-evenly",borderRadius:"5px"}}>
-                                <button onClick={handleDecrement2} style={{ color: "white", fontWeight: "700", height: "20px", width: "20px",backgroundColor:"rgba(0, 0, 0, .3)",border:"1px solid grey",borderRadius:"3px" }}>-</button>
+                                <button onClick={handleDecreament2} style={{ color: "white", fontWeight: "700", height: "20px", width: "20px",backgroundColor:"rgba(0, 0, 0, .3)",border:"1px solid grey",borderRadius:"3px" }}>-</button>
                                 <span style={{ height: "20px", width: "20px", fontWeight: "700", fontWeight: "700",color:"white" }}>{count2}</span>
                                 <button onClick={handleIncrement2} style={{ color: "white", fontWeight: "700", height: "20px", width: "20px" ,backgroundColor:"rgba(0, 0, 0, .3)",border:"1px solid grey",borderRadius:"3px"}}>+</button>
                                 </Grid>
@@ -326,7 +326,7 @@ const Home = () => {
                             <Grid style={{ display: "flex", height: "35px", justifyContent: "space-around", alignItems: "center" }}>
                                 <h1 style={{ color: "goldenrod", paddingBottom: "-70px", marginTop: "20px" }}>Burger</h1>
                                 <Grid style={{height:"100%",width:"40%",marginLeft:"20px",border:"2px solid gold",backgroundColor:"rgba(0, 0, 0, .3)",marginTop:"20px",display:"flex",alignItems:"center",justifyContent:"space-evenly",borderRadius:"5px"}}>
-                                <button onClick={handleDecrement2} style={{ color: "white", fontWeight: "700", height: "20px", width: "20px",backgroundColor:"rgba(0, 0, 0, .3)",border:"1px solid grey",borderRadius:"3px" }}>-</button>
+                                <button onClick={handleDecreament2} style={{ color: "white", fontWeight: "700", height: "20px", width: "20px",backgroundColor:"rgba(0, 0, 0, .3)",border:"1px solid grey",borderRadius:"3px" }}>-</button>
                                 <span style={{ height: "20px", width: "20px", fontWeight: "700", fontWeight: "700",color:"white" }}>{count2}</span>
                                 <button onClick={handleIncrement2} style={{ color: "white", fontWeight: "700", height: "20px", width: "20px" ,backgroundColor:"rgba(0, 0, 0, .3)",border:"1px solid grey",borderRadius:"3px"}}>+</button>
                                 </Grid>

@@ -17,7 +17,7 @@ const Adminprofile = () => {
             <div className={style.part2}>
                 <div className={style.section1}>
                     <h2>Location</h2>
-                    <h4>Bhubaneswar</h4>
+                    <h4>Bhubaneswar,Odisha</h4>
                 </div>
                 <div className={style.section2}>
                     <h2 >987654321</h2>

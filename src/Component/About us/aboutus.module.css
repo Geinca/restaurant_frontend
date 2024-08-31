@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 .Aboutus{
-    background-image: radial-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url("https://images.pexels.com/photos/1660030/pexels-photo-1660030.jpeg?cs=srgb&dl=pexels-elletakesphotos-1660030.jpg&fm=jpg"); 
+    background-image: radial-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url("https://png.pngtree.com/background/20230603/original/pngtree-background-blurred-restaurant-table-setting-photo-picture-image_2866182.jpg"); 
     background-size: cover;
     background-attachment: fixed;
     object-fit: cover;
@@ -23,7 +23,6 @@
     padding-top:100px;
     margin-left: 450px;
     text-align: center;
-    text-shadow: 0px 0px 20px rgba(255, 217, 0, 0.69);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
 }
@@ -103,7 +102,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 3px solid black;
+    border: 3px solid rgb(186, 134, 2);
     outline: none;
     border-radius: 6px;
     background-color: rgba(0, 0, 0, .3);

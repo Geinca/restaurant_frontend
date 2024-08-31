@@ -9,7 +9,7 @@ const Contactus = () => {
     <Grid container className={style.Contactus}  >
       <Nav />
       <section container className={style.h1} >
-        <div><h1>Contact Us</h1></div>
+        <div className={style.div}><h1>Contact Us</h1></div>
         <section >
           <article  className={style.part1}>
 
@@ -35,6 +35,7 @@ const Contactus = () => {
             <input type="text" placeholder='Email' />
             <input type="text" placeholder='Phone number' />
             <textarea name="" id="">Booking Details</textarea>
+            
             </article>
 
           </article>

@@ -1,0 +1,10 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.staff{
+    height: 100vh;
+    width: 100%;
+    background-image:radial-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url("https://wallpapers.com/images/hd/plain-light-blue-background-qsu6i874j8gfy1eg.jpg");
+}

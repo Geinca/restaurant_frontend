@@ -17,25 +17,25 @@ const Nav = () => {
             window.location.href = "/signup"
         }
     }
-  return (
-    <Grid className={style.nav}>
-                <img src={image} alt="" />
-                <Grid className={style.list}>
-                    <ol>
-                        <li><Link to={"/"} style={{ textDecoration: "none", color: "rgb(141, 253, 221)" }}>Home</Link></li>
-                        <li><Link to={'/aboutus'} style={{ textDecoration: "none", color: "rgb(141, 253, 221)" }}>About us</Link></li>
-                        <li><Link to={'/ourpartner'} style={{ textDecoration: "none", color: "rgb(141, 253, 221)" }}>Our partner</Link></li>
-                        <li><Link to={'/portfolio'} style={{ textDecoration: "none", color: "rgb(141, 253, 221)" }}>Portfolio</Link></li>
-                        <li><Link to={'/contactus'} style={{ textDecoration: "none", color: "rgb(141, 253, 221)" }}>Contact us</Link></li>
-                    </ol>
-                </Grid>
-                <select name="" id="" onChange={handelValue}>
-                    <option value="">Select</option>
-                    <option value="signup" style={{ color: "rgb(262, 204, 24)", textDecoration: "none", fontSize: "20px", fontFamily: "serif" }}>signup</option>
-                    <option value="signin" style={{ color: "rgb(262, 204, 24)", textDecoration: "none", fontSize: "20px", fontFamily: "serif" }}>Signin</option>
-                </select>
-            </Grid>
-  )
+    return (
+        <div className={style.nav}>
+            <img src={image} alt="" />
+            <div className={style.list}>
+                <ol>
+                    <li><Link to={"/"} style={{ textDecoration: "none", color: "rgb(207, 248, 236)" }}>Home</Link></li>
+                    <li><Link to={'/aboutus'} style={{ textDecoration: "none", color: "rgb(207, 248, 236)" }}>About us</Link></li>
+                    <li><Link to={'/ourpartner'} style={{ textDecoration: "none", color: "rgb(207, 248, 236)" }}>Our partner</Link></li>
+                    <li><Link to={'/portfolio'} style={{ textDecoration: "none", color: "rgb(207, 248, 236)" }}>Portfolio</Link></li>
+                    <li><Link to={'/contactus'} style={{ textDecoration: "none", color: "rgb(207, 248, 236)" }}>Contact us</Link></li>
+                </ol>
+            </div>
+            <select name="" id="" onChange={handelValue}>
+                <option value="">Select</option>
+                <option value="signup" style={{ color: "rgb(262, 204, 24)", textDecoration: "none", fontSize: "20px", fontFamily: "serif" }}>signup</option>
+                <option value="signin" style={{ color: "rgb(262, 204, 24)", textDecoration: "none", fontSize: "20px", fontFamily: "serif" }}>Signin</option>
+            </select>
+        </div>
+    )
 }
 
 export default Nav

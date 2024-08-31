@@ -11,7 +11,7 @@ const Signin = () => {
             <input type="text" placeholder="Username"/>
             <input type="password" placeholder="Password"/>
             <button>Signin</button>
-            <button id={style.btn}><Link to={"/"} style={{color:"rgb(54, 83, 55)",textDecoration:"none",fontSize:"23px"}}>Register</Link></button>
+            <button id={style.btn}><Link to={"/signup"} style={{color:"rgb(54, 83, 55)",textDecoration:"none",fontSize:"23px"}}>Register</Link></button>
         </form>
         </div >
     )
