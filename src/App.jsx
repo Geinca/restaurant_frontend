@@ -10,12 +10,14 @@ import Portfolio from './Component/Portfolio/Portfolio'
 import Nav from './Component/Nav/Nav'
 import Footer from './Component/Footer/Footer'
 import Dashboard from './Component/Dashboard/Dashboard'
-import Adminprofile from './Component/Dashboard/Profile/Adminprofile'
-import Order from './Component/Dashboard/Order/Order'
-import Menu from './Component/Dashboard/Menu/Menu'
-import Edit from './Component/Dashboard/Menu/Edit/Edit'
-import New from './Component/Dashboard/Menu/Edit/New'
-import Staff from './Component/Dashboard/Staff/Staff'
+import All from './Component/Dashboard/Menu/All/All'
+import Create from './Component/Dashboard/Menu/New/Create'
+import New from './Component/Dashboard/Employee/New'
+import Allemployee from './Component/Dashboard/Employee/Allemployee'
+import Allorder from './Component/Dashboard/Order/Allorder'
+import Neworder from './Component/Dashboard/Order/Neworder'
+
+
 const App = () => {
   return (
     <div>
@@ -30,15 +32,12 @@ const App = () => {
               <Route path='/ourpartner' element={<Ourpartner/>}/>
               <Route path='/portfolio' element={<Portfolio/>}/>
               <Route path='/dashboard' element={<Dashboard/>}/>
-              <Route path='/profile' element={<Adminprofile/>}/>
-              <Route path='/order' element={<Order/>}/>
-              <Route path='/menu' element={<Menu/>}/>
-              <Route path='/edit' element={<Edit/>}/>
+              <Route path='/catagory' element = {<All/>}/>
+              <Route path='/create' element={<Create/>}/>
               <Route path='/new' element={<New/>}/>
-              <Route path='/staff' element={<Staff/>}/>
-
-
-
+              <Route path='/employee' element={<Allemployee/>}/>
+              <Route path='/order' element={<Allorder/>}/>
+              <Route path='/place' element={<Neworder/>}/>
         </Routes>
         {/* <Footer/> */}
         </BrowserRouter>

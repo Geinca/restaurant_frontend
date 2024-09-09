@@ -4,12 +4,11 @@ import { Grid, Card } from "@mui/material"
 import SearchIcon from '@mui/icons-material/Search';
 import AccountBoxIcon from '@mui/icons-material/AccountBox';
 import NotificationsActiveIcon from '@mui/icons-material/NotificationsActive';
-import image from "../Assets/WhatsApp Image 2024-08-17 at 09.02.55_2451e7de.jpg";
-import SettingsApplicationsIcon from '@mui/icons-material/SettingsApplications';
+
 import { Link } from 'react-router-dom'
 import OutboundIcon from '@mui/icons-material/Outbound';
 import Line from './Line';
-import { styled ,alpha} from '@mui/material/styles';
+import { styled, alpha } from '@mui/material/styles';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
 import TableCell, { tableCellClasses } from '@mui/material/TableCell';
@@ -18,12 +17,16 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import Button from '@mui/material/Button';
-import AutoStoriesIcon from '@mui/icons-material/AutoStories';
-import GradeIcon from '@mui/icons-material/Grade';
-import LogoutIcon from '@mui/icons-material/Logout';
+
 import InputBase from '@mui/material/InputBase';
-import PersonPinCircleIcon from '@mui/icons-material/PersonPinCircle';
 import Footer from '../Footer/Footer';
+import Tablebar from './Table';
+import ShoppingCartCheckoutIcon from '@mui/icons-material/ShoppingCartCheckout';
+
+import MenuBookIcon from '@mui/icons-material/MenuBook';
+import DriveFolderUploadIcon from '@mui/icons-material/DriveFolderUpload';
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import Sidebar from './Sidebar/Sidebar';
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
@@ -73,6 +76,7 @@ const Dashboard = () => {
   };
   const Search = styled('div')(({ theme }) => ({
     position: 'relative',
+    border: '1px solid grey',
     borderRadius: theme.shape.borderRadius,
     backgroundColor: alpha(theme.palette.common.white, 0.15),
     '&:hover': {
@@ -86,7 +90,7 @@ const Dashboard = () => {
       width: 'auto',
     },
   }));
-  
+
   const SearchIconWrapper = styled('div')(({ theme }) => ({
     padding: theme.spacing(0, 2),
     height: '100%',
@@ -95,6 +99,7 @@ const Dashboard = () => {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
+
   }));
   const StyledInputBase = styled(InputBase)(({ theme }) => ({
     color: 'inherit',
@@ -109,41 +114,20 @@ const Dashboard = () => {
       },
     },
   }));
-  
-  
+
+
 
   return (
     <div className={style.Dashboard}>
       <div className={style.part1}>
-        <div className={style.img}>
-          <img src={image} alt="" />
-          <h1>NuaScan</h1>
-        </div>
-        <div className={style.list}>
-          <h4><Link to={"/dashboard"} style={{ textDecoration: "none", color: "white", fontSize: "20px" }}>Dashboard</Link></h4>
-          <h3><AutoStoriesIcon style={{ marginRight: "20px" }} /><Link to={'/menu'} style={{ textDecoration: "none", color: "white", fontSize: "20px" }}>Menu</Link></h3>
-          <h3><GradeIcon /><Link to={'/order'} style={{ textDecoration: "none", color: "white", fontSize: "20px", marginLeft: "10px" }}>Order status</Link></h3>
-          <h3><PersonPinCircleIcon /><Link to={'/staff'} style={{ textDecoration: "none", color: "white", fontSize: "20px", marginLeft: "10px" }}>Staff managment</Link></h3>
-        </div>
-        <div className={style.setting}>
-
-          <SettingsApplicationsIcon style={{ height: "20px", width: "20px", marginLeft: "-30px" }} /><h3 style={{ marginLeft: "-50px" }}>Settings</h3>
-          <h3>Log Out</h3><LogoutIcon style={{ height: "20px", width: "20px", marginLeft: "-50px" }} />
-        </div>
+        <Sidebar/>
       </div>
 
       <div className={style.part2}>
-        <div className={style.nav}>
-          <ol>
-            <li><Link to={"/"} style={{textDecoration:"none",color:"rgb(58, 58, 58)"}}>Home</Link></li>
-            <li><Link to={'/aboutus'} style={{textDecoration:"none",color:"rgb(58, 58, 58)"}}>About us</Link></li>
-            <li><Link to={'/ourpartner'} style={{textDecoration:"none",color:"rgb(58, 58, 58)"}}>Our partner</Link></li>
-            <li><Link to={'/portfolio'} style={{textDecoration:"none",color:"rgb(58, 58, 58)"}}>Portfolio</Link></li>
-            <li><Link to={'/contactus'} style={{textDecoration:"none",color:"rgb(58, 58, 58)"}}>Contact us</Link></li>
-          </ol>
-        </div>
-        <div className={style.section}>
-          <Search>
+
+        <div className={style.section} style={{ height: "80px" }}>
+          <h2>Dashboard</h2>
+          <Search style={{ width: "500px", marginLeft: "-280px" }}>
             <SearchIconWrapper>
               <SearchIcon />
             </SearchIconWrapper>
@@ -152,69 +136,77 @@ const Dashboard = () => {
               inputProps={{ 'aria-label': 'search' }}
             />
           </Search>
-          {/* <SearchIcon style={{ marginLeft: "20px", color: "grey" }} /> */}
+
           <div className={style.section1}>
             <div><Link to={"/notification"}><NotificationsActiveIcon style={{ color: "grey" }} /></Link></div>
             <div><Link to={"/profile"}><AccountBoxIcon style={{ color: "grey" }} /></Link></div>
           </div>
         </div>
-        <Grid container direction="row" justifyContent="center" textAlign="center" alignItems="center" p={"20px"} className={style.Grid}>
-          <Grid container lg={12} sm={12} direction="row" justifyContent="center" spacing={6} className={style.Grid1}>
-            <Grid item lg={3} sm={6} textAlign="center" className={style.secson}>
-              <Card style={{ height: "100%", width: "90%", padding: "10px", border: "1px solid grey", boxShadow: "0px 0px 5px grey", backgroundColor: "rgba(0, 0, 0, 0.1)" }}>
-                <h1 style={{ fontSize: "20px", color: "rgb(74, 74, 74)", paddingTop: "20px" }}>Total menu</h1>
-                <div style={{ display: "flex", justifyContent: "space-around", paddingTop: "20px" }}>
-                  <h3 style={{ color: "rgb(74, 74, 74)" }}>100</h3>
-                  <OutboundIcon style={{ color: "green" }} />
-
+        <Grid container direction="row" justifyContent="center" textAlign="center" alignItems="center" p={"20px"} >
+          <Grid container lg={12} sm={12} direction="row" justifyContent="center" spacing={6}>
+            <Grid item lg={3} sm={6} textAlign="center">
+              <Card style={{ height: "100%", width: "100%", padding: "10px", border: "none", boxShadow: "20px 20px 31px 0px rgba(150,144,150,1)", backgroundColor: " #ff8928", borderRadius: "15px" }}>
+                <h1 style={{ fontSize: "27px", color: "black", paddingTop: "10px", marginLeft: "-59px" }}>Total menu</h1>
+                <div style={{ display: "flex", justifyContent: "space-around" }}>
+                  <h1 style={{ color: "rgb(74, 74, 74)", paddingTop: "10px" }}>10,000</h1><MenuBookIcon style={{ marginTop: "14px", color: "rgb(76, 76, 76)" }} />
                 </div>
-                <h3 style={{ color: "rgb(74, 74, 74)" }}>40%</h3>
+
+                <div style={{ display: "flex", justifyContent: "space-around" }}>
+                  <h4 style={{ color: "rgb(74, 74, 74)" }}>40 new item added <br />Monthly</h4>
+                  <OutboundIcon style={{ color: "green" }} />
+                </div>
+
               </Card>
             </Grid>
-            <Grid item lg={3} sm={6} textAlign="center" className={style.secson}>
-              <Card style={{ height: "100%", width: "90%", padding: "10px", border: "1px solid grey", boxShadow: "0px 0px 5px grey", backgroundColor: "rgba(0, 0, 0, 0.1)" }}>
-                <h1 style={{ fontSize: "20px", color: "rgb(74, 74, 74)", paddingTop: "20px" }}>Total Order</h1>
-                <div style={{ display: "flex", justifyContent: "space-around", paddingTop: "20px" }}>
-                  <h3 style={{ color: "rgb(74, 74, 74)" }}>100</h3>
-                  <OutboundIcon style={{ color: "green" }} />
-
+            <Grid item lg={3} sm={6} textAlign="center" >
+              <Card style={{ height: "100%", width: "100%", padding: "10px", border: "none", boxShadow: "20px 20px 31px 0px rgba(150,144,150,1)", backgroundColor: "#00DDFF", borderRadius: "15px" }}>
+                <h1 style={{ fontSize: "27px", color: "black", paddingTop: "10px", marginLeft: "-30px" }}>Total Order</h1>
+                <div style={{ display: "flex", justifyContent: "space-around" }}>
+                  <h1 style={{ color: "rgb(74, 74, 74)", paddingTop: "10px" }}>10,000</h1><ShoppingCartCheckoutIcon style={{ marginTop: "14px", color: "rgb(76, 76, 76)" }} />
                 </div>
-                <h3 style={{ color: "rgb(74, 74, 74)" }}>40%</h3>
+                <div style={{ display: "flex", justifyContent: "space-around" }}>
+                  <h4 style={{ color: "rgb(74, 74, 74)" }}>40% Grow in order <br />Monthly</h4>
+                  <OutboundIcon style={{ color: "green" }} />
+                </div>
               </Card>
             </Grid>
-            <Grid item lg={3} sm={6} textAlign="center" className={style.secson}>
-              <Card style={{ height: "100%", width: "90%", padding: "10px", border: "1px solid grey", boxShadow: "0px 0px 5px grey", backgroundColor: "rgba(0, 0, 0, 0.1)" }}>
-                <h1 style={{ fontSize: "20px", color: "rgb(74, 74, 74)", paddingTop: "20px" }}>Total revenue</h1>
-                <div style={{ display: "flex", justifyContent: "space-around", paddingTop: "20px" }}>
-                  <h3 style={{ color: "rgb(74, 74, 74)" }}>100</h3>
-                  <OutboundIcon style={{ color: "green" }} />
-
+            <Grid item lg={3} sm={6} textAlign="center" >
+              <Card style={{ height: "100%", width: "100%", padding: "10px", border: "none", boxShadow: "20px 20px 31px 0px rgba(150,144,150,1)", backgroundColor: "#9bc400", borderRadius: "15px" }}>
+                <h1 style={{ fontSize: "27px", color: "black", paddingTop: "10px", marginLeft: "-20px" }}>Total revenue</h1>
+                <div style={{ display: "flex", justifyContent: "space-around" }}>
+                  <h1 style={{ color: "rgb(74, 74, 74)", paddingTop: "10px" }}>10,000</h1><DriveFolderUploadIcon style={{ marginTop: "14px", color: "rgb(76, 76, 76)" }} />
                 </div>
-                <h3 style={{ color: "rgb(74, 74, 74)" }}>40%</h3>
+                <div style={{ display: "flex", justifyContent: "space-around" }}>
+                  <h4 style={{ color: "rgb(74, 74, 74)" }}>40% Grow in revenue <br />Monthly </h4>
+                  <OutboundIcon style={{ color: "green" }} />
+                </div>
               </Card>
             </Grid>
-            <Grid item lg={3} sm={6} textAlign="center" className={style.secson}>
-              <Card style={{ height: "100%", width: "90%", padding: "10px", border: "1px solid grey", boxShadow: "0px 0px 5px grey", backgroundColor: "rgba(0, 0, 0, 0.1)" }}>
-                <h1 style={{ fontSize: "20px", color: "rgb(74, 74, 74)", paddingTop: "20px" }}>Total Customer</h1>
-                <div style={{ display: "flex", justifyContent: "space-around", paddingTop: "20px" }}>
-                  <h3 style={{ color: "rgb(74, 74, 74)" }}>100</h3>
+            <Grid item lg={3} sm={6} textAlign="center" >
+              <Card style={{ height: "100%", width: "100%", padding: "10px", border: "none", boxShadow: "20px 20px 31px 0px rgba(150,144,150,1)", backgroundColor: "#e1b382", borderRadius: "15px" }}>
+                <h1 style={{ fontSize: "27px", color: "black", paddingTop: "10px", marginLeft: "-10px" }}>Total Customer</h1>
+                <div style={{ display: "flex", justifyContent: "space-around" }}>
+                  <h1 style={{ color: "rgb(74, 74, 74)", paddingTop: "10px" }}>10,000</h1><AccountCircleIcon style={{ marginTop: "14px", color: "rgb(76, 76, 76)" }} />
+                </div>
+                <div style={{ display: "flex", justifyContent: "space-around" }}>
+                  <h4 style={{ color: "rgb(74, 74, 74)" }}>40% Grow in customer <br />Monthly</h4>
                   <OutboundIcon style={{ color: "green" }} />
                 </div>
-                <h3 style={{ color: "rgb(74, 74, 74)" }}>40%</h3>
-
               </Card>
             </Grid>
 
           </Grid>
         </Grid>
-        <Grid container paddingLeft={"50px"} paddingTop={"40px"} >
+
+        <Tablebar />
+        <Grid container marginLeft={"65px"} padding={"30px"} height={"75%"} width={"90%"} border={"none"} boxShadow={" 1px 14px 52px -18px rgba(0,0,0,0.75)"} backgroundColor={"white"} borderRadius={"10px"} marginTop={"20px"} >
           <Line />
 
         </Grid>
         <div className={style.table}>
           <section>
             <div>
-              <h1 colSpan={6} style={{ fontSize: "30px", height: "65px", width: "90%", border: "1px solid grey", borderRadius: "8px", backgroundColor: "rgba(199, 195, 195, 0.703)", boxShadow: "0px 0px 10px black", textAlign: "center", paddingTop: "15px" }}>Order list</h1>
+              <h1 colSpan={6} style={{ fontSize: "30px", height: "65px", width: "99%", border: "1px solid grey", boxShadow: " 1px 14px 52px -18px rgba(0,0,0,0.75)", backgroundColor: "white", borderRadius: "15px", textAlign: "center", paddingTop: "15px" }}>Order list</h1>
             </div>
 
 
@@ -254,11 +246,12 @@ const Dashboard = () => {
 
           </section>
         </div>
+
         <div>
-          <Footer/>
+          <Footer />
         </div>
       </div>
-      
+
     </div>
   )
 }

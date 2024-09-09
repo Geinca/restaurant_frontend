@@ -4,9 +4,9 @@ import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
-import style from "./select.module.css"
+import style from "./employee.module.css"
 
-export default function Order() {
+export default function Employee() {
   const [menu, setMenu] = React.useState('');
 
   const handleChange = (event) => {
@@ -14,28 +14,28 @@ export default function Order() {
     const value = event.target.value
     
     setMenu(value)
-        if (value == "catagory") {
-            window.location.href = "/catagory"
+        if (value == "employee") {
+            window.location.href = "/employee"
         }
-        else if (value == "create") {
-            window.location.href = "/create"
+        else if (value == "new") {
+            window.location.href = "/new"
         }
   };
 
   return (
     <Box className={style.box} >
       <FormControl fullWidth >
-        <InputLabel id="demo-simple-select-label" style={{color:"white"}}>Order</InputLabel>
+        <InputLabel id="demo-simple-select-label" style={{color:"white"}}>Employee</InputLabel>
         <Select
           labelId="demo-simple-select-label"
           id="demo-simple-select"
           value={menu}
           label="Menu"
           onChange={handleChange}
-          style={{color:"white"}}
+          
         >
-          <MenuItem value="/order" >All catagory</MenuItem>
-          <MenuItem value="create" >Create catagory</MenuItem>
+          <MenuItem value="employee" >All Employee</MenuItem>
+          <MenuItem value="new" >Create Employee</MenuItem>
           
         </Select>
       </FormControl>

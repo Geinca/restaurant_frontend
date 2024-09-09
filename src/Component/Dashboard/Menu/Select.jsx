@@ -6,7 +6,7 @@ import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 import style from "./select.module.css"
 
-export default function Order() {
+export default function BasicSelect() {
   const [menu, setMenu] = React.useState('');
 
   const handleChange = (event) => {
@@ -25,7 +25,7 @@ export default function Order() {
   return (
     <Box className={style.box} >
       <FormControl fullWidth >
-        <InputLabel id="demo-simple-select-label" style={{color:"white"}}>Order</InputLabel>
+        <InputLabel id="demo-simple-select-label" style={{color:"white"}}>Menu</InputLabel>
         <Select
           labelId="demo-simple-select-label"
           id="demo-simple-select"
@@ -34,7 +34,7 @@ export default function Order() {
           onChange={handleChange}
           style={{color:"white"}}
         >
-          <MenuItem value="/order" >All catagory</MenuItem>
+          <MenuItem value="catagory" >All catagory</MenuItem>
           <MenuItem value="create" >Create catagory</MenuItem>
           
         </Select>
