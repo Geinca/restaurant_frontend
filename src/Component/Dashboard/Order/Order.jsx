@@ -24,15 +24,13 @@ export default function Order() {
 
   return (
     <Box className={style.box} >
-      <FormControl fullWidth >
-        <InputLabel id="demo-simple-select-label" style={{color:"white"}}>Order</InputLabel>
+       <FormControl variant="filled" sx={{ m: 1, minWidth: 120 }} >
+        <InputLabel className="demo-simple-select-filled-label" style={{ color: "white",fontSize:"20px",paddingTop:"10px" }}>Order</InputLabel>
         <Select
-          labelId="demo-simple-select-label"
-          id="demo-simple-select"
-          value={menu}
-          label="Menu"
+          labelId="demo-simple-select-filled-label"
+          id="demo-simple-select-filled"
+          value="Menu"
           onChange={handleChange}
-          style={{color:"white"}}
         >
           <MenuItem value="/order" >All catagory</MenuItem>
           <MenuItem value="create" >Create catagory</MenuItem>

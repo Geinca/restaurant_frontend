@@ -210,38 +210,7 @@ const Dashboard = () => {
             </div>
 
 
-            <TableContainer component={Paper}>
-              <Table sx={{ minWidth: 700 }} aria-label="customized table">
-                <TableHead>
-                  <TableRow>
-                    <StyledTableCell>Order Number</StyledTableCell>
-                    <StyledTableCell align="right">Order Name</StyledTableCell>
-                    <StyledTableCell align="right">Table Number</StyledTableCell>
-                    <StyledTableCell align="right">Quantity</StyledTableCell>
-                    <StyledTableCell align="right">Price</StyledTableCell>
-                    <StyledTableCell align="right">Order Satus</StyledTableCell>
-                  </TableRow>
-                </TableHead>
-                <TableBody>
-                  {rows.map((row) => (
-                    <StyledTableRow key={row.name}>
-                      <StyledTableCell component="th" scope="row">
-                        {row.ordernum}
-                      </StyledTableCell>
-                      <StyledTableCell align="right">{row.name}</StyledTableCell>
-                      <StyledTableCell align="right">{row.table}</StyledTableCell>
-                      <StyledTableCell align="right">{row.quantity}</StyledTableCell>
-                      <StyledTableCell align="right">{row.price}</StyledTableCell>
-
-                      <StyledTableCell align="right">
-                        <Button onClick={() => handleSave(row)}>Save</Button>
-                        <Button onClick={() => handleDelete(row)}>Delete</Button>
-                      </StyledTableCell>
-                    </StyledTableRow>
-                  ))}
-                </TableBody>
-              </Table>
-            </TableContainer>
+         
 
 
           </section>

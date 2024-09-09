@@ -20,13 +20,13 @@ const Sidebar = () => {
         <div className={style.list}>
           <h4><Link to={"/dashboard"} style={{ textDecoration: "none", color: "white", fontSize: "29px" }}>Dashboard</Link></h4>
           <div style={{ display: "flex", justifyContent: "center" }}>
-            <MenuIcon style={{ marginTop: "20px" }} /><Select />
+            <MenuIcon style={{ marginTop: "30px" }} /><Select />
           </div>
           <div style={{ display: "flex", justifyContent: "center" }}>
-            <Person4Icon style={{ marginTop: "20px" }} /><Employee />
+            <Person4Icon style={{ marginTop: "30px" }} /><Employee />
           </div>
           <div style={{ display: "flex", justifyContent: "center" }}>
-            <ShoppingCartIcon style={{ marginTop: "20px" }} /><Order />
+            <ShoppingCartIcon style={{ marginTop: "30px" }} /><Order />
           </div>
           
           

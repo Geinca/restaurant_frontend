@@ -66,7 +66,7 @@ const Table = () => {
             {topSellingProducts.map((product, index) => (
               <tr key={index}>
                 <img style={{ width: "20px", height: "18",borderRadius:'5px' , marginTop: "10px"}} src={product.src} />
-                <td >{product.product}</td>
+                <td style={{marginLeft:'-100px'}}>{product.product}</td>
                 <td >{product.price}</td>
               </tr>
             ))}

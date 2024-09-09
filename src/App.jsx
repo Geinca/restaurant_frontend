@@ -17,7 +17,6 @@ import Allemployee from './Component/Dashboard/Employee/Allemployee'
 import Allorder from './Component/Dashboard/Order/Allorder'
 import Neworder from './Component/Dashboard/Order/Neworder'
 
-
 const App = () => {
   return (
     <div>
